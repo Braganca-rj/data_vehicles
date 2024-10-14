@@ -1,4 +1,4 @@
-[server]
+
 headless = true
 port = 10000
 serverAddress = "0.0.0.0"
