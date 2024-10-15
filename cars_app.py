@@ -5,7 +5,7 @@ import plotly.express as px
 car_data = pd.read_csv('vehicles.csv')
 
 st.header("Does it influence the price of your vehicle or not?")
-st.write("Let's discover the factors that influence the price of your vehicle when selling it by analyzing some online ads data.")
+st.subheader("Let's discover the factors that influence the price of your vehicle when selling it by analyzing some online ads data.")
 
 
 # Groupings used to calculate the table values.
@@ -29,4 +29,4 @@ build_dispersion_odometer = st.button('Create dispersion')
 
 if build_dispersion_odometer:
     st.write('Creating a histogram for the car sales ads dataset')
-    px.scatter(odometer_price, y='price', x='odometer', color='odometer')
+    st.scatter_chart(odometer_price, y='price', x='odometer', color='odometer')
