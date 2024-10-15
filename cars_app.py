@@ -3,10 +3,20 @@ import pandas as pd
 import plotly.express as px
 
 car_data = pd.read_csv('vehicles.csv')
-
+# Header
 st.header("Does it influence the price of your vehicle or not?")
 st.subheader("Let's discover the factors that influence the price of your vehicle when selling it by analyzing some online ads data.")
 
+# Changer the background-color
+page_bg_color = """
+<style>
+    body {
+        background-color: #f0f0f0;
+    }
+</style>
+"""
+
+st.markdown(page_bg_color, unsafe_allow_html=True)
 
 # Groupings used to calculate the table values.
 odometer_price = car_data.groupby(
