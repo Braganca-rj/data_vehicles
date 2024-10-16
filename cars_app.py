@@ -62,11 +62,11 @@ if build_scatter_condition:
 title_fuel = st.title('Fuel x Price')
 build_fuel = st.write(
     "Discover how much a car's fuel consumption influences the time to sell it.")
-build_bar_fuel = st.button('See the chart here of Fuel x Price')
+build_hist_fuel = st.button('See the chart here of Fuel x Price')
 
 
-if build_bar_fuel:
-    st.write('Creating a bar graph for the car sales ads dataset')
+if build_hist_fuel:
+    st.write('Creating a histogram graph for the car sales ads dataset')
     fig = px.histogram(fuel_price, x='fuel', y='price', color='fuel')
     st.plotly_chart(fig, use_container_width=True)
 
