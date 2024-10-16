@@ -1,6 +1,8 @@
 # data_vehicles
 #link here:https://data-vehicles-jr76.onrender.com
 
+#One tip, use dark mode, it's better for viewing (personal opinion)
+
 
 Data vehicles was developed using tools such as Streamlit, Python, Pandas, Plotly and Jupyter Notebook.
 
