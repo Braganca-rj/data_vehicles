@@ -67,7 +67,9 @@ build_bar_fuel = st.button('See the chart here of Fuel x Price')
 
 if build_bar_fuel:
     st.write('Creating a bar graph for the car sales ads dataset')
-    st.bar_chart(fuel_price, x='fuel', y='price', color='fuel')
+    fig = px.histogram(fuel_price, x='fuel', y='price', color='fuel')
+    st.plotly_chart(fig, use_container_width=True)
+
 
 # The fifth table (Type x Price)
 
